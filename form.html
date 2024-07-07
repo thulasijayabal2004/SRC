@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="Application.css">
+
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<body>
+
+    <nav>
+        <h2 class="logo">SRC</h2>
+         <ul>
+             <li><a href="index.html">Home |</a></li>
+             <li><a href="aboutus.html">About Us |</a></li>
+             <li><a href="gallery.html">Gallery |</a></li>
+             <li><a href="transport.html">Transport |</a></li>                                                                               </a>
+             <li><a href="form.html">Application Form |</a></li>
+             <li><a href="contact.html">Contact Us |</a></li>
+         </ul>
+     </nav>
+
+
+     <div class="container">
+        <h2>Application Form</h2>
+        <form action="register.py" method="post">
+            <table cellpadding="10" cellspacing="10">
+                <tr>
+                    <td>First Name :</td> 
+                    <td><input type="text" name="firstname"></td>
+                </tr>
+
+                <tr>
+                    <td>Last Name :</td> 
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+
+                <tr>
+                    <td>Father Name : </td>
+                    <td><input type="text" name="fathername"></td>
+                </tr>
+
+                <tr>
+                    <td>Mother Name : </td>
+                    <td><input type="text" name="mothername"></td>
+                </tr>
+
+                <tr>
+                    <td>Date Of Birth : </td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender : </td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address : </td>
+                    <td><textarea name="address"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Contact : </td>
+                    <td><input type="number" name="contact"></td>
+                </tr>
+
+                <tr>
+                    <td>Class wants to Join : </td>
+                    <td>
+                        <select name="class">
+                            <option value="prekg">PreKG</option>
+                            <option value="lkg">LKG</option>
+                            <option value="ukg">UKG</option>
+                            <option value="1to5">1 to 5</option>
+                            <option value="6to10">6 to 10</option>
+                            <option value="11to12">11 to 12</option>
+                        </select>
+                    </td>
+                </tr>
+
+            <div class="button">
+                <tr>
+                    <td></td><td><input type="submit" value="Submit"></td>
+                </tr>
+            </div>
+                
+                
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
